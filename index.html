@@ -1,107 +1,77 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>KSASTYLE ($KSA) – Official Site</title>
-  <meta name="description" content="KSASTYLE ($KSA) is a community-driven meme token on BNB Smart Chain inspired by Saudi culture.">
-  <link rel="icon" type="image/svg+xml" href="/assets/logo.svg">
-  <meta property="og:title" content="KSASTYLE ($KSA) – Official Site">
-  <meta property="og:description" content="KSASTYLE ($KSA) is a community-driven meme token on BNB Smart Chain.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ksastyle.me/">
-  <meta property="og:image" content="/assets/logo.svg">
-  <meta name="theme-color" content="#28C76F">
-  <style>:root{--bg:#0b0f14;--card:#111823;--text:#e6f2ec;--muted:#9fb6aa;--accent:#28C76F;--accent-2:#81FBB8}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.5}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:1100px;margin:0 auto;padding:24px}
-.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:center;padding:48px 0}
-@media (max-width:900px){.hero{grid-template-columns:1fr}}
-.card{background:linear-gradient(180deg,rgba(40,199,111,.08),rgba(17,24,35,.95));border:1px solid rgba(129,251,184,.15);border-radius:16px;padding:20px}
-.badge{display:inline-block;background:rgba(129,251,184,.12);border:1px solid rgba(129,251,184,.35);color:var(--accent-2);padding:6px 10px;border-radius:999px;font-weight:600;font-size:12px;letter-spacing:.4px}
-h1{font-size:40px;margin:10px 0 8px}
-h2{font-size:22px;margin:16px 0 8px;color:var(--accent-2)}
-p.lead{font-size:18px;color:var(--muted);margin:0 0 14px}
-.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid rgba(129,251,184,.35);background:rgba(17,24,35,.7);color:var(--text);font-weight:600}
-.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#04130a;border:none}
-.kv{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-@media (max-width:700px){.kv{grid-template-columns:1fr}}
-.kv .item{background:var(--card);border:1px solid rgba(129,251,184,.12);border-radius:14px;padding:16px}
-.kv .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.5px}
-.kv .value{font-size:16px;font-weight:700;word-break:break-all}
-.footer{border-top:1px solid rgba(129,251,184,.15);margin-top:36px;padding-top:18px;color:var(--muted);font-size:14px}
-.logo{width:40px;height:40px;border-radius:8px;background:#000;display:grid;place-items:center;overflow:hidden}
-.logo img{width:32px;height:32px;display:block}
-.section{margin-top:28px}
-ul.clean{list-style:none;padding:0;margin:0;display:grid;gap:10px}
-.socials{display:flex;gap:10px;flex-wrap:wrap}
-.small{font-size:13px;color:var(--muted)}
-.code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;background:#0e141b;border:1px solid rgba(129,251,184,.12);border-radius:8px;padding:8px 10px}</style>
-  <script type="application/ld+json">
-  {"@context": "https://schema.org", "@type": "Organization", "name": "KSASTYLE", "url": "https://ksastyle.me/", "logo": "/assets/logo.svg", "email": "info@ksastyle.me", "sameAs": ["https://linktr.ee/ksastyle"]}
-  </script>
-</head>
-<body>
-  <div class="container">
-    <div class="hero card">
-      <div>
-        <span class="badge">BNB Smart Chain • BEP-20</span>
-        <h1>KSASTYLE <span class="small">($KSA)</span></h1>
-        <p class="lead">KSASTYLE is a community-driven meme token blending crypto culture with Saudi-inspired vibes. Fun, creative, and powered by the community.</p>
-        <div class="cta">
-          <a class="btn primary" href="https://linktr.ee/ksastyle" target="_blank" rel="noopener">Join the Community</a>
-          <a class="btn" href="https://bscscan.com/token/0xb0b30A6a49bAB32eC121AC16b25C7eFf391eeFF9" target="_blank" rel="noopener">View on BscScan</a>
-        </div>
-
-        <div class="section kv">
-          <div class="item">
-            <div class="label">Token Contract</div>
-            <div class="value code">0xb0b30A6a49bAB32eC121AC16b25C7eFf391eeFF9</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>KSASTYLE ($KSA) — Official Site</title>
+    <meta name="description" content="KSASTYLE ($KSA) is a community-driven meme token on BNB Smart Chain inspired by Saudi vibes: fun, creative, and powered by the community.">
+    <link rel="icon" href="/assets/logo-32.png" type="image/png">
+    <style>
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0;line-height:1.6;background:#0f1115;color:#e8e8ea}
+      header{display:flex;gap:12px;align-items:center;padding:18px 22px;border-bottom:1px solid #20232a;background:#0f1115;position:sticky;top:0}
+      header img{width:28px;height:28px;border-radius:50%}
+      main{max-width:980px;margin:0 auto;padding:28px 18px}
+      .hero{display:flex;flex-direction:column;gap:8px;margin:4px 0 22px}
+      .pill{display:inline-block;padding:6px 10px;border:1px solid #2a2f3a;border-radius:999px;font-size:12px;color:#aab0b6}
+      h1{font-size:32px;margin:8px 0 6px}
+      p.lead{font-size:18px;color:#cdd1d6;margin:0 0 10px}
+      .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:12px}
+      .card{border:1px solid #2a2f3a;border-radius:12px;padding:16px;background:#11131a}
+      a.btn{display:inline-block;padding:10px 14px;border-radius:10px;border:1px solid #2a2f3a;text-decoration:none;color:#e8e8ea}
+      a.btn:hover{border-color:#4b82f4}
+      footer{padding:28px 18px;border-top:1px solid #20232a;color:#aab0b6}
+      code{background:#0b0d12;border:1px solid #2a2f3a;border-radius:6px;padding:2px 6px}
+      ul{margin:8px 0 0 18px}
+      .muted{color:#aab0b6}
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="/assets/logo-64.png" alt="$KSA logo">
+      <strong>KSASTYLE ($KSA)</strong>
+    </header>
+    <main>
+      <div class="hero">
+        <span class="pill">BNB Smart Chain • Meme Token • Community</span>
+        <h1>KSASTYLE ($KSA) — Saudi‑inspired meme energy</h1>
+        <p class="lead">KSASTYLE ($KSA) is a community-driven meme token on <strong>BNB Smart Chain</strong>, blending crypto culture with Saudi vibes. We focus on fun, creativity, and building a positive community.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Contract</h3>
+            <p>Address:<br><code>0xb0b30A6a49bAB32eC121AC16b25C7eFf391eeFF9</code></p>
+            <p class="muted">Verify the contract and ownership on BscScan.</p>
           </div>
-          <div class="item">
-            <div class="label">Official Email</div>
-            <div class="value"><a href="mailto:info@ksastyle.me">info@ksastyle.me</a></div>
+          <div class="card">
+            <h3>Docs</h3>
+            <p><a class="btn" href="/whitepaper.pdf" target="_blank" rel="noopener">Whitepaper (PDF)</a></p>
+            <p><a class="btn" href="/about.html">About & Team</a></p>
           </div>
-        </div>
-
-        <div class="section">
-          <h2>About the Project</h2>
-          <p>KSASTYLE ($KSA) aims to spark a playful wave of memes and community engagement. Holders can participate in community challenges, meme contests, and social campaigns. This site serves as the official source of truth for core info and links.</p>
-        </div>
-
-        <div class="section">
-          <h2>Socials</h2>
-          <div class="socials">
-            <a class="btn" href="https://linktr.ee/ksastyle" target="_blank" rel="noopener">All Links (Linktree)</a>
-            <a class="btn" href="#" onclick="alert('Add your X/Twitter link here');return false;">X (Twitter)</a>
-            <a class="btn" href="#" onclick="alert('Add your Telegram link here');return false;">Telegram</a>
-            <a class="btn" href="#" onclick="alert('Add your TikTok link here');return false;">TikTok</a>
+          <div class="card">
+            <h3>Community</h3>
+            <p><a class="btn" href="https://x.com/ksastyleteam" target="_blank" rel="noopener">X (Twitter)</a></p>
+            <p><a class="btn" href="https://t.me/+6BxD_yIM9iY3NGM8" target="_blank" rel="noopener">Telegram</a></p>
+            <p class="muted">More channels will be added here.</p>
           </div>
         </div>
       </div>
-      <div>
-        <div class="logo"><img src="/assets/logo.svg" alt="KSASTYLE logo"></div>
-        <div class="section card">
-          <h2>Token Details</h2>
-          <ul class="clean">
-            <li><span class="label">Name</span><br><span class="value">KSASTYLE</span></li>
-            <li><span class="label">Symbol</span><br><span class="value">KSA</span></li>
-            <li><span class="label">Network</span><br><span class="value">BNB Smart Chain (BEP-20)</span></li>
-            <li><span class="label">Contract</span><br><span class="value code">0xb0b30A6a49bAB32eC121AC16b25C7eFf391eeFF9</span></li>
-          </ul>
-          <p class="small">Always verify the contract address. Beware of scams and impersonators.</p>
-        </div>
+      <div class="card">
+        <h3>What is $KSA?</h3>
+        <p>$KSA is a community meme token. No promises of profit, no fundraising, no presale. Our goal is to create a fun, creative space for the Saudi crypto community—memes, challenges, and social engagement.</p>
+        <ul>
+          <li><strong>Chain:</strong> BNB Smart Chain</li>
+          <li><strong>Type:</strong> BEP‑20</li>
+          <li><strong>Symbol:</strong> KSA</li>
+          <li><strong>Supply:</strong> See BscScan “Total Supply” on the contract page</li>
+        </ul>
       </div>
-    </div>
-
-    <div class="footer small">
-      © <span id="year"></span> KSASTYLE. All rights reserved. • Contact: <a href="mailto:info@ksastyle.me">info@ksastyle.me</a>
-    </div>
-  </div>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+      <div class="card">
+        <h3>Disclaimer</h3>
+        <p>This site and token are for community and entertainment purposes. Nothing here is financial advice. Always DYOR.</p>
+        <p class="muted">Contact: <a href="mailto:info@ksastyle.me">info@ksastyle.me</a></p>
+      </div>
+    </main>
+    <footer>
+      © 2025 KSASTYLE. All rights reserved.
+    </footer>
+  </body>
 </html>
