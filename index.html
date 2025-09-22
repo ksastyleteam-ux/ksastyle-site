@@ -1,112 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Title يظهر في المتصفح -->
   <title>KSASTYLE | Community-Driven Meme Token</title>
-
-  <!-- وصف قصير لمحركات البحث -->
-  <meta name="description" content="KSASTYLE ($KSA) is a Saudi-inspired meme token on BNB Smart Chain. A fun, creative, and community-driven crypto project founded by Ahmed Alzzhrani.">
-
-  <!-- كلمات مفتاحية -->
-  <meta name="keywords" content="KSASTYLE, KSA Token, Meme Coin, BNB Smart Chain, Ahmed Alzzhrani, Saudi Meme Token">
-
-  <!-- اسم المؤسس -->
+  <meta name="description" content="KSASTYLE ($KSA) is a Saudi-inspired meme token on BNB Smart Chain. Fun, creative, and community-driven — founded by Ahmed Alzzhrani.">
+  <meta name="keywords" content="KSASTYLE, KSA Token, Meme Coin, BNB Smart Chain, Saudi, Ahmed Alzzhrani">
   <meta name="author" content="Ahmed Alzzhrani">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="KSASTYLE Token">
-  <meta property="og:description" content="KSASTYLE ($KSA) is a community-driven meme token on BNB Smart Chain, founded by Ahmed Alzzhrani.">
-  <meta property="og:url" content="https://ksastyle.me">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://ksastyle.me/assets/logo-32.svg">
+  <!-- Social Cards -->
+  <meta property="og:title" content="KSASTYLE Token" />
+  <meta property="og:description" content="KSASTYLE ($KSA) — Saudi-inspired community meme token on BNB Smart Chain." />
+  <meta property="og:url" content="https://ksastyle.me" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://ksastyle.me/assets/logo-32.svg" />
 
-  <!-- أيقونة الموقع -->
-  <link rel="icon" href="/assets/logo-32.svg" type="image/svg+xml">
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/logo-32.svg" type="image/svg+xml" />
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      text-align: center;
+    :root{
+      --green:#0e5c2f;
+      --green-2:#0a4a25;
+      --gold:#d4af37;
+      --fg:#f7f7f7;
+      --card:#101b13;
+      --ring: 2px solid var(--gold);
+      --radius:14px;
+      --shadow:0 8px 22px rgba(0,0,0,.25);
     }
-    header {
-      background: #111;
-      color: #fff;
-      padding: 20px 0;
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color:var(--fg);
+      background:
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="rgba(255,255,255,0.05)"><text y="50%">🌴</text></svg>') repeat,
+        linear-gradient(180deg, var(--green), var(--green-2));
     }
-    header h1 {
-      margin: 0;
+    .container{ width:min(1120px, 92%); margin:0 auto; }
+    header{
+      position:sticky; top:0; z-index:50;
+      background:rgba(16,27,19,.75);
+      backdrop-filter:saturate(120%) blur(8px);
+      border-bottom:1px solid rgba(212,175,55,.35);
     }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: #fff;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .content {
-      max-width: 900px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    footer {
-      background: #f1f1f1;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    footer a {
-      color: #0077b5;
-      text-decoration: none;
-    }
+    .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+    .brand{ display:flex; align-items:center; gap:12px; }
+    .brand img{ width:40px; height:40px; object-fit:contain; filter: drop-shadow(0 2px 6px rgba(0,0,0,.35)); }
+    .brand .title{ font-weight:800; letter-spacing:.5px; }
+    .brand .ticker{ font-weight:700; color:var(--gold); border:1px solid rgba(212,175,55,.5); border-radius:999px; padding:2px 10px; font-size:.85rem; margin-left:6px; }
+    .links a{ color:var(--fg); text-decoration:none; font-weight:700; margin-left:18px; padding:8px 10px; border-radius:10px; }
+    .links a:hover{ background:rgba(212,175,55,.12); }
+    .hero{ padding:64px 0 42px; text-align:center; }
+    .hero .logo-big{ width:92px; height:92px; object-fit:contain; border-radius:999px; border: var(--ring); background: #fff; padding:8px; box-shadow: var(--shadow); }
+    h1{ font-size: clamp(28px, 3.6vw, 44px); margin:16px 0 10px; }
+    .tagline{ max-width:780px; margin:0 auto 28px; line-height:1.6; opacity:.95; }
+    .cta{ display:inline-flex; gap:14px; flex-wrap:wrap; justify-content:center; }
+    .btn{ border-radius:12px; padding:12px 18px; font-weight:800; text-decoration:none; transition:.15s transform ease; box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+    .btn:active{ transform: translateY(1px); }
+    .btn-gold{ background:var(--gold); color:#1a1a1a; }
+    .btn-ghost{ border:1px solid rgba(255,255,255,.35); color:var(--fg); }
+    .grid{ display:grid; gap:18px; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); margin:34px 0 22px; }
+    .card{ background:var(--card); border:1px solid rgba(212,175,55,.35); border-radius:var(--radius); padding:18px 18px 16px; box-shadow: var(--shadow); }
+    .card h3{ margin:8px 0 8px; color:var(--gold); }
+    .card p{ margin:0; opacity:.95; }
+    footer{ margin-top:42px; padding:18px 0 30px; text-align:center; border-top:1px solid rgba(212,175,55,.35); background:rgba(0,0,0,.25); }
+    footer a{ color:var(--gold); text-decoration:none; }
   </style>
 </head>
 <body>
   <header>
-    <h1>KSASTYLE ($KSA)</h1>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/whitepaper.pdf" target="_blank">Whitepaper</a>
-      <a href="https://x.com/ksastyleteam" target="_blank">Twitter</a>
-      <a href="https://t.me/+6BxD_yIM9iY3NGM8" target="_blank">Telegram</a>
-    </nav>
+    <div class="container nav">
+      <div class="brand">
+        <img src="/assets/logo-32.svg" alt="KSASTYLE Logo" />
+        <div>
+          <div class="title">KSASTYLE <span class="ticker">($KSA)</span></div>
+          <small style="opacity:.8">Saudi-inspired Meme Token on BNB Chain</small>
+        </div>
+      </div>
+      <nav class="links">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/whitepaper.pdf" target="_blank" rel="noopener">Whitepaper</a>
+        <a href="https://x.com/ksastyleteam" target="_blank" rel="noopener">Twitter</a>
+        <a href="https://t.me/+6BxD_yIM9iY3NGM8" target="_blank" rel="noopener">Telegram</a>
+      </nav>
+    </div>
   </header>
 
-  <div class="content">
-    <h2>Welcome to KSASTYLE</h2>
-    <p>
-      KSASTYLE ($KSA) is a <strong>community-driven meme token</strong> on the BNB Smart Chain, inspired by Saudi culture.  
-      Our mission is to combine fun, creativity, and crypto culture to build an engaging community.
-    </p>
+  <main class="container">
+    <section class="hero">
+      <img class="logo-big" src="/assets/logo-32.svg" alt="KSASTYLE Logo" />
+      <h1>Welcome to KSASTYLE</h1>
+      <p class="tagline">
+        KSASTYLE ($KSA) is a <strong>community-driven meme token</strong> on the BNB Smart Chain, inspired by Saudi culture.  
+        Founded and managed by Ahmed Alzzhrani — building fun, creativity, and community through crypto culture.
+      </p>
+      <div class="cta">
+        <a class="btn btn-gold" href="/whitepaper.pdf" target="_blank">📄 Whitepaper</a>
+        <a class="btn btn-ghost" href="https://bscscan.com/token/0xb0b30A6a49bAB32eC121AC16b25C7eFf391eeFF9" target="_blank">🔗 View on BscScan</a>
+      </div>
+    </section>
 
-    <h3>Founder & Team</h3>
-    <p>
-      KSASTYLE is founded and managed by <strong>Ahmed Alzzhrani</strong>.<br>
-      At this stage, the project is led by a single founder who oversees all aspects of development and community growth.  
-      <br>
-      <a href="https://www.linkedin.com/in/ahmedalzahrani" target="_blank">LinkedIn Profile</a>
-    </p>
-
-    <h3>Quick Links</h3>
-    <ul style="list-style:none; padding:0;">
-      <li><a href="https://bscscan.com/token/0xb0b30A6a49bAB32eC121AC16b25C7eFf391eeFF9" target="_blank">View on BscScan</a></li>
-      <li><a href="https://ksastyle.me/whitepaper.pdf" target="_blank">Whitepaper</a></li>
-      <li><a href="https://x.com/ksastyleteam" target="_blank">Twitter</a></li>
-      <li><a href="https://t.me/+6BxD_yIM9iY3NGM8" target="_blank">Telegram</a></li>
-    </ul>
-  </div>
+    <section class="grid">
+      <div class="card">
+        <h3>Founder</h3>
+        <p>KSASTYLE is founded and managed by <strong>Ahmed Alzzhrani</strong>, the sole team member at this stage.</p>
+        <p>Official Profile: <a href="https://linktr.ee/ksastyle" target="_blank">Linktree</a></p>
+      </div>
+      <div class="card">
+        <h3>Community</h3>
+        <p>Follow us on <a href="https://x.com/ksastyleteam" target="_blank">Twitter</a> and <a href="https://t.me/+6BxD_yIM9iY3NGM8" target="_blank">Telegram</a> to join the movement.</p>
+      </div>
+      <div class="card">
+        <h3>Whitepaper</h3>
+        <p>Read our <a href="/whitepaper.pdf" target="_blank">whitepaper</a> to learn about tokenomics, roadmap, and the vision.</p>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 KSASTYLE. All Rights Reserved.</p>
